@@ -1,2 +1,2 @@
 #!/bin/bash
-#include <stdio.h>>$CFILE
+gcc -E $CFILE
