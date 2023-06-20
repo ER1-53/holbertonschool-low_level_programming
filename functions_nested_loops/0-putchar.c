@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
  *main - function time
  *
@@ -9,6 +10,6 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	_putchar('\n');
 	return (0);
 }
