@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
- *main - retry again again
+ *print_alphabet - vide
  *
- *Description: print alpha in lowercase
+ *Description: do loops for alpha
  *
- *Return: Success
+ *Return: On success 1.
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int alpha;
+
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	{
+		_putchar(alpha);
+	}
+	_putchar('\n');
 }
