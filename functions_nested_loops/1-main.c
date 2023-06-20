@@ -1,19 +1,12 @@
 #include "main.h"
 
 /**
- *print_alphabet - vide
+ * main - check the code
  *
- *Description: do loops for alpha
- *
- *Return: On success 1.
+ * Return: Always 0.
  */
-void print_alphabet(void)
+int main(void)
 {
-	int alpha;
-
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
-	{
-		_putchar(alpha);
-	}
-	_putchar('\n');
+	print_alphabet();
+	return (0);
 }

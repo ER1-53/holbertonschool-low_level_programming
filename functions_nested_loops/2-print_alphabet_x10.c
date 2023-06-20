@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
  *print_alphabet_x10 - retry
  *
  *Description: print 10 alpha
  *
- *Return: if u want
  */
 void print_alphabet_x10(void)
 {
