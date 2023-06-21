@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_function - return
+ *_abs - return
  *@c: is come back
  *
  *Description: it want eat me
