@@ -6,7 +6,8 @@
  *
  *Description: function to do if is lower
  *
- *return: Success
+ *Return: Success
+ *
 **/
 int _islower(int c)
 {
@@ -17,8 +18,7 @@ int _islower(int c)
 	}
 	else
 	{
-	        return (0);
-
+		return (0);
 	}
- 
+
 }
