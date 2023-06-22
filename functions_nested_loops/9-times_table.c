@@ -11,21 +11,22 @@
 
 void times_table(void)
 {
-	int num0, num1, num2, num3, num4, num5, num6, num7, num8, num9;
+	int x;
+	int y;
+	int z;
 
-	for (num0 = 0; num0 <= 10; num0++)	{
-		_putchar('0');
-	}
-	for (num0 = 0; num0 <= 10; num0++)	{
-	for (num0 = 0; num0 <= 10; num0++)
-
+	for (y = 0; y < 10; y++)
 	{
-	for (num0 = 0; num0 <= 10; num0++){
+		for (x = 0; x <= 9; x++)
+		{
+			z=x*y;
+			putchar(z +'0');
 
-	for (num0 = 0; num0 <= 10; num0++)
+			if (x > 9)
 			{
-	for (num0 = 0; num0 <= 10; num0++)	{
-	for (num0 = 0; num0 <= 10; num0++)	{
-	for (num0 = 0; num0 <= 10; num0++)	{
-	for (num0 = 0; num0 <= 10; num0++)	{
-	for (num0 = 0; num0 <= 10; num0++)	{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+		putchar('\n');
+	}
