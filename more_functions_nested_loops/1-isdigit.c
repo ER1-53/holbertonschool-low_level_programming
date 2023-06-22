@@ -14,6 +14,10 @@ int _isdigit(int c)
 	{
 		return (0);
 	}
+	else if (c <= 0 && c >= 0)
+	{
+		return (0);
+	}
 	else
 	{
 		return (1);
