@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_function - return
+ *_isdigit - return
  *@c: is come back
  *
  *Description: it want eat me
@@ -18,3 +18,4 @@ int _isdigit(int c)
 	{
 		return (0);
 	}
+}
