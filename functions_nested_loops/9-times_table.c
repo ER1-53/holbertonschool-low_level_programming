@@ -18,11 +18,11 @@ void times_table(void)
 		{
 			sum = x * y;
 
-			if (sum < 10)
+			if (sum < 10 && y != 0)
 			{
 				_putchar(' ');
 			}
-			else
+			else if (y != 0)
 			{
 				_putchar('0' + (sum / 10));
 			}
