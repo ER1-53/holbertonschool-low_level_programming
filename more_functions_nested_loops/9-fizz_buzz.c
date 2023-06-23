@@ -15,7 +15,11 @@ int main(void)
 	{
 		if (turn % 3 == 0 && turn % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
+			if (turn != 100)
+			{
+			putchar(' ');
+			}
 		}
 		else if (turn % 5 == 0)
 		{
