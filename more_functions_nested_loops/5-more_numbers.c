@@ -10,25 +10,26 @@
 void more_numbers(void)
 {
 	int y;
-
-	for (y = 0; y <= 14; y++)
+	int u;
+	int ten;
+	for (ten = 0; ten <10; ten++)
 	{
-		if (y > 9)
+		for (y = 0; y <= 14; y++)
 		{
+			if (y > 9)
+			{
 
-		int v = y / 10;
+				int v = y / 10;
 
-		_putchar(v + '0');
+				_putchar(v + '0');
+
+			}
+
+			u = y % 10;
+
+			_putchar(u + '0');
 
 		}
-		else
-		{
-
-			int u = y % 10;
-
-		_putchar(u + '0');
-		}
-
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
