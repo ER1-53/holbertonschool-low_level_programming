@@ -12,7 +12,7 @@ void print_line(int n)
 {
 	int u;
 
-	if (n >= 0)
+	if (n > 0)
 	{
 		for (u = 0; u <= n; u++)
 		{
