@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- *_function - return
- *@c: is come back
+ *times_table - return
  *
  *Description: it want eat me
  *
@@ -11,22 +10,30 @@
 
 void times_table(void)
 {
-	int x;
-	int y;
-	int z;
+	int x, y, sum;
 
-	for (y = 0; y < 10; y++)
+	for (x = 0; x < 10 ; x++)
 	{
-		for (x = 0; x <= 9; x++)
+		for (y = 0; y < 10; y++)
 		{
-			z=x*y;
-			putchar(z +'0');
+			sum = x * y;
 
-			if (x > 9)
+			if (sum < 10)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(' ');
 			}
+			else
+			{
+				_putchar('0' + (sum / 10));
+			}
+			_putchar('0' + (sum % 10));
+			if (y < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
+}
