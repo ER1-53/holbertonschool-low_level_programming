@@ -13,23 +13,23 @@ int main(void)
 
 	for (turn = 1; turn <= 100; turn++)
 	{
-		if (turn % 3 == 0)
+		if (turn % 3 == 0 && turn % 5 == 0)
 		{
-			printf("Fizz ");
+			printf("FizzBuzz ");
 		}
 		else if (turn % 5 == 0)
 		{
 			printf("Buzz ");
 		}
-		else if (turn % 5 == 0 && turn % 3 == 0)
+		else if (turn % 3 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("Fizz ");
 		}
 		else
 		{
 			printf("%d ", turn);
 		}
-  	}
+	}
 	putchar('\n');
 	return (0);
 }
