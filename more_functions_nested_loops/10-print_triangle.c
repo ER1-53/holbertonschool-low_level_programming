@@ -20,9 +20,9 @@ void print_triangle(int size)
 	}
 	else
 	{
-		for (y = 0; y <= size; y++)
+		for (y = 0; y < size; y++)
 		{
-			for (x = 0; x < (size - y); x++)
+			for (x = 0; x < (size - y - 1); x++)
 			{
 				_putchar(' ');
 
