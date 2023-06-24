@@ -9,31 +9,28 @@
  */
 int main(void)
 {
-	int turn;
+	int n;
 
-	for (turn = 1; turn <= 100; turn++)
+	for (n = 1; n <= 100; n++)
 	{
-		if (turn % 3 == 0 && turn % 5 == 0)
+		if (n % 15 == 0)
 		{
 			printf("FizzBuzz");
 		}
-		else if (turn % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		else if (turn % 3 == 0)
+		else if (n % 3 == 0)
 		{
 			printf("Fizz");
 		}
+		else if (n % 5 == 0)
+		{
+			printf("Buzz");
+		}
 		else
 		{
-			printf("%d", turn);
+			printf("%d", n);
 		}
-		if (turn <= 99)
-		{
-			printf(" ");
-		}
-       	}
+		printf(" ");
+	}
 	printf("\n");
 	return (0);
 }
