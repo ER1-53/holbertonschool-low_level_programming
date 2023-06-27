@@ -10,18 +10,18 @@
  */
 void print_rev(char *s)
 {
-	char servni = 0;
+	char eservni = 0;
 
 	while (*s != '\0')
 	{
 		s++;
-		servni++;
+		eservni++;
 	}
-	while (servni >= 0)
+	while (eservni > 0)
 	{
 		_putchar(*s);
 		s--;
-		servni--;
+		eservni--;
 	}
 	_putchar('\n');
 }
