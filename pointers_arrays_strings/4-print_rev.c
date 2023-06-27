@@ -17,9 +17,9 @@ void print_rev(char *s)
 		s++;
 		eservni++;
 	}
-	while (eservni > 0)
+	while (eservni >= 0)
 	{
-		_putchar(*s);
+		_putchar(*s + 1);
 		s--;
 		eservni--;
 	}
