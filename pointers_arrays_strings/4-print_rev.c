@@ -12,14 +12,14 @@ void print_rev(char *s)
 {
 	char eservni = 0;
 
-	while (*s != '\0')
+	while (*s < '\0')
 	{
 		s++;
 		eservni++;
 	}
-	while (eservni >= 0)
+	while ((eservni - 1) >= 0)
 	{
-		_putchar(*s + 1);
+		_putchar(*s);
 		s--;
 		eservni--;
 	}
