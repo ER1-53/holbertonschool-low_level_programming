@@ -23,4 +23,5 @@ void print_rev(char *s)
 		s--;
 		servni--;
 	}
+	_putchar('\n');
 }
