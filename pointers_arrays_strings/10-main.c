@@ -1,14 +1,3 @@
-void swap_int(int *a, int *b);
-void reset_to_98(int *n);
-int _putchar(char c);
-int _strlen(char *s);
-void _puts(char *str);
-void print_rev(char *s);
-void rev_string(char *s);
-void puts2(char *str);
-void puts_half(char *str);
-void print_array(int *a, int n);
-char *_strcpy(char *dest, char *src);
 #include "main.h"
 #include <stdio.h>
 
@@ -35,4 +24,7 @@ int main(void)
 	printf("%d\n", nb);
 	nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
 	printf("%d\n", nb);
-	nb = _atoi("---++++ -++ Sui - t
+	nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
+	printf("%d\n", nb);
+	return (0);
+}
