@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -12,20 +13,14 @@ void puts_half(char *str)
 {
 	int len, i;
 
-	while (str[len] != '\0')
+	for (len = 0; str[len] != '\0'; len++)
 	{
-		len++;
+		if (len % 2 == 1)
+		{
+			continue;
+		}
 	}
-	if (len % 2 == 1)
-	{
-		i = (len - 1) / 2;
-		i = i + 1;
-	}
-	else
-	{
-		i = len / 2;
-	}
-	for (; i < len; i++)
+	for (i = (len+1)/ 2; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}
