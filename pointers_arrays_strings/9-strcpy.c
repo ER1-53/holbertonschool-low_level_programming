@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- *_function - return
- *@c: is come back
+ *_strcpy - return
+ *@dest: is come back
+ *@src: is come back
  *
  *Description: it want eat me
  *
