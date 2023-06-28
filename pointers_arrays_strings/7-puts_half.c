@@ -19,7 +19,7 @@ void puts_half(char *str)
 			length++;
 		}
 
-
+	length--;
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (i >= length / 2)
