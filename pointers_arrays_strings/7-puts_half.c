@@ -22,7 +22,10 @@ void puts_half(char *str)
 	length--;
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (i >= length / 2)
+		if (i < length / 2)
+		{
+		}
+		else
 		{
 			_putchar(str[i]);
 		}
