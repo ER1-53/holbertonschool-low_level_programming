@@ -10,26 +10,19 @@ int _atoi(char *s)
 {
 	int i = 0, a = 1, number = 0;
 
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		if (s[i] == '-')
 		{
 			a = -1;
-			i++;
 		}
-
-		if (s[i] >= '0' || s[i] <= '9')
+		else if (s[i] >= '0' && s[i] <= '9')
 		{
-			number = (number * 10) + (s[i] - '0');
+			number = number * 10 + (s[i] - '0');
 		}
 		i++;
 	}
-	number = number * a;
 
-	if(number == 0)
-	{
-		return (0);
-	}
-
-	return (number);
+	number *= a;
+	return number;
 }
