@@ -24,5 +24,5 @@ int _atoi(char *s)
 	}
 
 	number *= a;
-	return number;
+	return (number);
 }
