@@ -4,16 +4,24 @@
  *_puts_recursion - Write a function that prints a string.
  *@s: is come back
  *
- *Description: en cours
+ *Description: putchar affiche le 1er caractère de la string
+ *en appellant la fonction _puts-recursion(index + 1)
+ *la fonction se répéte indefiniment
+ *On utilise alors la condition if
+ *pour arreter la fonction sur le caractère NULL et
+ *retourner un saut de ligne.
  *
  *Return: Success
  */
 void _puts_recursion(char *s)
 {
-	while (*s != '\0')
+	if (*s == '\0')
 	{
-		_putchar(*s);
-		s++;
+		_putchar('\n');
+		return;
 	}
-	_putchar('\n');
+
+	_putchar(*s);
+
+	_puts_recursion(s + 1);
 }
