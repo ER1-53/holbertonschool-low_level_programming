@@ -5,7 +5,14 @@
  *@s: is come back
  *
  *Description: On cherche à compter le nombre de caractere dasn la string
- *On crée la variable i pour compter le nombre de tour de la fonction
+ *On crée la variable i qui permettra de compter le nombre de tour à la fin
+ *de la recurtion.
+ *'i' prend comme variable la fonction _strlen_recursion
+ *les carateres vont s'empiler sur la pile (stack)
+ *la fonction va etre appelé jusqu'au caractere NULL
+ *elle return chaque caractère de la pile grace au return
+ *et incrementera i++ pour chaque caractère
+ *puis retournera i soit le i++ * caractere de la pile.
  *
  *
  *Return: Success

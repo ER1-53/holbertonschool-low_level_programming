@@ -1,10 +1,16 @@
 #include "main.h"
 
 /**
- *_print_rev_recursion - La recursion rempli une pile qui incremente
- *l'index de la chaine de caratère de la 1ere valeur à la dernière puis
- *la redistribue à l'endroit si le putchar est avant l'appel de la fonction
- *à l'envers si le putchar est après l'appel de la fonction.
+ *_print_rev_recursion - la fonction est appelé par le main;
+ *elle rencontre la condition if qui n'est pour le moment pas
+ *rempli (*s == '\0')
+ *la 1ere lettre est 'p' que la fonction stocke dans le font de la pile
+ *puis la fonction est de nouvea solicité avec cette fois (s+1)
+ *donc caractère suivant.
+ *le caractere qui suit est à son tour stocker sur la pile
+ *puis ainsi de suite jusqu'au caractere nul
+ * alors la pile est retourné puis affiché dans le putchar
+ *en commencant par le haut de la pile jusqu'au font
  *
  *@s: is come back
  *

@@ -10,6 +10,11 @@
  *On utilise alors la condition if
  *pour arreter la fonction sur le caractère NULL et
  *retourner un saut de ligne.
+ *La 1ere lettre appelé est 'P' est afficher dès le 1er tour
+ *_puts_recursion(s+1) appel de nouveau la fonction avec cette fois
+ *le caractère à l'adresse suivante (s+1) qui affiche 'u' avant que la
+ *fonction ne soit appelé à nouveau.
+ *puis appel de la fonction et ainsi de suite juqu'au caractère NULL
  *
  *Return: Success
  */
