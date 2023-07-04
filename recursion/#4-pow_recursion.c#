@@ -9,7 +9,7 @@
  *Description: On cherche à retourner x à la puissance y;
  *exemple x = 5 et y = 2
  *
- * pow |y - 1| 1-1 = 0 donc x(5) * _pow_recursion(x, y-1) = *0 
+ * pow |y - 1| 1-1 = 0 donc x(5) * _pow_recursion(x, y-1) = *0
  * pow |y - 1| 2-1 = 1 donc x(5) * _pow_recursion(x, y-1) = *5
  *resultat = 5 * 5 = 25
  *
@@ -26,4 +26,13 @@ int _pow_recursion(int x, int y)
 		return (1);
 	}
 	return (x * _pow_recursion(x, y - 1));
+}
+
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+	{
+		return (-1);
+	}
+	return res_sqrt_recursion(0, n);
 }
