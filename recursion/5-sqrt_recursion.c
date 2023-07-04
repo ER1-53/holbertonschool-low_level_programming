@@ -24,6 +24,14 @@ int res_sqrt_recursion(int i, int n)
 	return (res_sqrt_recursion(i + 1, n));
 }
 
+/**
+ *_sqrt_recursion - return
+ *@n: is come back
+ *
+ *Description: it want eat me
+ *
+ *Return: Success
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
