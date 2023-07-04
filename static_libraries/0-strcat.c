@@ -3,7 +3,7 @@
 /**
  *_strcat - return
  *@dest: is come back
- *@dest: is come back
+ *@src: is come back
  *
  *Description: it want eat me
  *
@@ -26,6 +26,5 @@ char *_strcat(char *dest, char *src)
 		s1++;
 	}
 	dest[s1] = '\0';
-	_putchar('\n');
-	return (0);
+	return (dest);
 }
