@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *string_toupper - change une caractere minuscule ne Maj
- *@s: renvoie le bon caractere
+ *string_troupper - change une caractere minuscule ne Maj
+ *@s: renvoie le bon caractere 
  *
  *Description: it want eat me
  *

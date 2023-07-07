@@ -11,16 +11,16 @@
  */
 void reverse_array(int *a, int n)
 {
-	int *start = a;
-	int *end = a + n - 1;
+    int *start = a;
+    int *end = a + n - 1;
 
-	while (start < end)
-	{
-		int temp = *start;
-		*start = *end;
-		*end = temp;
+    while (start < end)
+    {
+        int temp = *start;
+        *start = *end;
+        *end = temp;
 
-		start++;
-		end--;
-	}
+        start++;
+        end--;
+    }
 }
