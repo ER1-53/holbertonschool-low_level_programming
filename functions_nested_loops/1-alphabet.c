@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- *print_alphabet - vide
+ *print_alphabet - Write a function that prints the alphabet, in lowercase,
+ *followed by a new line.
  *
- *Description: do loops for alpha
+ *Description: Cree une boucle qui commence sur le caractère 'a' et
+ *l'afficher jusqu'au caractère 'z'.
  *
  *Return: On success 1.
  */

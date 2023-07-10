@@ -5,7 +5,8 @@
  *@argc: number of argument
  *@argv: string of argument
  *
- *Description: it want eat me
+ *Description: Un des deux paramètres 'argc' n'aura aucun argument
+ *on lui ajoute l'attribue  __attribute__((unused))
  *
  *Return: Success
  */

@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *main - function time
+ *main - Write a program that prints _putchar, followed by a new line.
  *
- *Description: _putchar
+ *Description: affiche les caractères les un après les autres
+ *puis retour à la ligne.
  *
  *Return: all thing
  */

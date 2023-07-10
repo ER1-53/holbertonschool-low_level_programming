@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- *_isalpha - return the good value
+ *_isalpha - Write a function that checks for alphabetic character.
  *@c: is come back
  *
- *Description: it want eat me
+ *Description: Si les caractères sont de 'a' à 'z' en minuscule et
+ *majuscule on return 1 sinon 0.
  *
  *Return: Success
  */

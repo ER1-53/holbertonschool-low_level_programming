@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- *_islower - return value 1 or 0
+ *_islower - Write a function that checks for lowercase character.
  *@c: is the posibilty of letter or number
  *
- *Description: function to do if is lower
+ *Description: Si 'c' est un caractère entre 'a' et 'z' return 1 sinon
+ *return 0.
  *
  *Return: Success
  *

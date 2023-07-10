@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *print_sign - return
+ *print_sign - Write a function that prints the sign of a number.
  *@n: is come back
  *
- *Description: it want eat me
+ *Description: SI 'n'
  *
  *Return: Success
  */

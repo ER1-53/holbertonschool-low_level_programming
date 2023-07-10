@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *print_alphabet_x10 - retry
+ *print_alphabet_x10 - Write a function that prints 10 times the alphabet,
+ *in lowercase, followed by a new line.
  *
- *Description: print 10 alpha
+ *Description: Crée une boucle  qui affiche 10x les caractères de 'a' à 'z'
  *
  */
 void print_alphabet_x10(void)
