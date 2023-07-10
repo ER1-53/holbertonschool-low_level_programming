@@ -11,6 +11,10 @@
  *on vérifie si str n'est pas vide sinon return NULL
  *grace on nombre de caratère on connait l'espace qu'il faut allouer dans
  *malloc pour copier le même mot.
+ *la 1ere boucle permet de comptabiliser le nombre de caractère
+ *dans le mot
+ *dans pt_memory on multiplit la valeur par 'i' + 1 (sans la valeur NULL)
+ *Puis avec la 2nd boucle on copie la string de str[i] dans pt_memory[i].
  *
  *Return: Success
  */
