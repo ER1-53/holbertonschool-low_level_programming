@@ -21,9 +21,10 @@ char *str_concat(char *s1, char *s2)
 	if (s2 != NULL)
 		for (j = 0 ; s2[j] != '\0' ; j++)
 			j++;
-	if(s1 != NULL)
+	if (s1 != NULL)
 		for (i = 0 ; s1[i] != '\0'; i++)
 			i++;
+	printf("%d %d \n", i, j);
 	arr = malloc((i + j + 1) * sizeof(char));
 	if (arr == 0)
 		return (NULL);
