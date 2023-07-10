@@ -9,10 +9,10 @@
  *@s2: is come back
  *
  *Description: alloue de la mémoire pour pouvoir concatener deux string
- *dans une autre variable
  *
  *Return: Success
  */
+
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int i, j;
@@ -24,11 +24,12 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (j = 0 ; s2[j] != '\0' ; j++)
 	{
-
 	}
 	for (i = 0 ; s1[i] != '\0'; i++)
 	{
 	}
+	if (*s1 == 0 || *s2 == 0)
+	return (NULL);
 
 	arr = malloc((i + j + 1) * sizeof(char));
 
@@ -49,6 +50,5 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 	arr[i + j] = '\0';
-
 	return (arr);
 }
