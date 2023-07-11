@@ -24,6 +24,7 @@ void *malloc_checked(unsigned int b)
 
 	arr = malloc(b);
 	if (arr == 0)
+	printf("98");
 	return (0);
 
 	return (arr);
