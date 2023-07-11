@@ -3,30 +3,51 @@
 #include <stdlib.h>
 
 /**
- *alloc_grid - Write a function that concatenates two strings.
+ *alloc_grid - Write a program that multiplies two numbers.
  *
  *@width: is come back
  *@height: is come back
  *
- *Description: alloue de la mémoire pour pouvoir concatener deux string
+ *Description: en cours
+ *
+ *
+ *
+ *
+ *
  *
  *Return: Success
  */
-
 int **alloc_grid(int width, int height)
 {
-	int **tab;
+	int **arr;
+	int i, j;
 
-if (width <= 0 || height <= 0)
-	return 0;
+	if (width <= 0 || height <= 0)
+		return (NULL);
 
-tab = malloc(width * sizeof( int *));
-tab = malloc(height * sizeof( int *));
+	arr = malloc(sizeof(int *) * height);
+	if (arr == NULL)
+		return (NULL);
 
-for (y = 0 ; y < height; y++)
-{
-	for (x = 0; x < width; x++)
-}
+	for (i = 0; i < height; i++)
+	{
+		arr[i] = malloc(sizeof(int) * width);
+		if (arr[i] == NULL)
+		{
+			for (j = 0; j < i; j++)
+				free(arr[j]);
+			free(arr);
+			return (NULL);
+		}
+	}
 
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			arr[i][j] = 0;
+		}
+	}
 
+	return (arr);
 }
