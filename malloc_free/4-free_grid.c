@@ -3,12 +3,13 @@
 #include <stdlib.h>
 
 /**
- *str_concat - Write a function that concatenates two strings.
+ *free_grid - Write a function that frees a 2 dimensional grid previously
+ *created by your alloc_grid function.
  *
- *@s1: is come back
- *@s2: is come back
+ *@grid: is come back
+ *@height: is come back
  *
- *Description: alloue de la mémoire pour pouvoir concatener deux string
+ *Description: creer une boucle qui libère la mémoire du tableau 2D  'grid'
  *
  *Return: Success
  */
