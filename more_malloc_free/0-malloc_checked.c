@@ -3,9 +3,8 @@
 #include <stdlib.h>
 
 /**
- *_strdup - Write a function that returns a pointer to a newly allocated
- *space in memory, which contains a copy of the string given as a parameter.
- *@str: is come back
+ *malloc_checked - Write a function that allocates memory using malloc.
+ *@b: pointeur vers malloc_checked
  *
  *Description: il faut connaitre le nombre de caractère à copier
  *on vérifie si str n'est pas vide sinon return NULL
@@ -20,11 +19,10 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *arr;
+	int *arr = malloc(b);
 
-	arr = malloc(b);
-	if (arr == 0)
-	return (0);
+	if (!arr)
+		exit(98);
 
 	return (arr);
 }
