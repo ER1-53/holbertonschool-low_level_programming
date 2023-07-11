@@ -8,9 +8,13 @@
  *@argv: the other
  *
  *Description: On cherche à multiplier deux arguments;
+ *On condition le fonctionnement
+ *		si il y à 3 arguments (prog arg1 arg2)
+ *on peut multiplier sinon Error
  *
- *
- *
+ *On utilise la fonction atoi
+ *pour obtenir une variable num1 et une num2
+ *puis '*' et affiche le resultat.
  *
  *
  *Return: Success

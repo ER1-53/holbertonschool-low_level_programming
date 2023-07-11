@@ -3,11 +3,15 @@
 #include <ctype.h>
 
 /**
- *main - return
+ *main - Write a program that adds positive numbers.
  *@argc: is come back
  *@argv: the other
  *
- *Description: it want eat me
+ *Description: On veut additionner deux entiers
+ *si il n'y a pas d'argument (argc <= 1 soit juste le prog) affiche 0
+ *
+ *
+ *
  *
  *Return: Success
  */

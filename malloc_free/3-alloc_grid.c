@@ -3,46 +3,30 @@
 #include <stdlib.h>
 
 /**
- *str_concat - Write a function that concatenates two strings.
+ *alloc_grid - Write a function that concatenates two strings.
  *
- *@s1: is come back
- *@s2: is come back
+ *@width: is come back
+ *@height: is come back
  *
  *Description: alloue de la mémoire pour pouvoir concatener deux string
  *
  *Return: Success
  */
+
 int **alloc_grid(int width, int height)
 {
-	char *arr;
-	int i, y;
+	int **tab;
 
-	if (width <= 0 ||height <= 0)
-	return (0);
+if (width <= 0 || height <= 0)
+	return 0;
 
-	arr = malloc(sizeof(int) * width);
-	if (arr == NULL)
-		return (NULL);
-		for (i = 0; i < height; i++)
-		{
-			arr[i] = malloc(sizeof(int) * width);
+tab = malloc(width * sizeof( int *));
+tab = malloc(height * sizeof( int *));
 
-			if(arr[i] == NULL)
-			{
-				for (;i >= 0; i++)
-					free(arr[i]);
+for (y = 0 ; y < height; y++)
+{
+	for (x = 0; x < width; x++)
+}
 
-				free(arr);
-				retunr (NULL);
-			}
-		}
-		for (i = 0; i < height; i++)
-		{
-			for(y = 0; y< width; y++)
-			{
-				arr[i][y] = 0;
 
-			}
-		}
-		return (arr);
 }
