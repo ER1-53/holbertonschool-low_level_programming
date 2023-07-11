@@ -2,11 +2,13 @@
 #include <stdio.h>
 
 /**
- *main - return
+ *main - Write a program that prints all arguments it receives.
  *@argc: is come back
  *@argv: the other
  *
- *Description: it want eat me
+ *Description: On crée un boucle pour afficher tous les arguments
+ *présent dans argv, il est pris comme repère de dénombrement
+ *argc qui connait la quantité d'argument présent
  *
  *Return: Success
  */

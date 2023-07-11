@@ -2,11 +2,14 @@
 #include <stdio.h>
 
 /**
- *main - return
+ *main - Write a program that prints the number of arguments passed into it.
  *@argc: is come back
  *@argv: the other
  *
- *Description: it want eat me
+ *Description: argv ne sera utilisé on lui ajoute l'attibut
+ *__attribute__((unused))
+ *on affiche le nombre d'argument present dans notre ligne de commande
+ *sans prendre en compte le programme.
  *
  *Return: Success
  */

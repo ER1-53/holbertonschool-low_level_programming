@@ -3,11 +3,15 @@
 #include <stdlib.h>
 
 /**
- *main - return
+ *main - Write a program that multiplies two numbers.
  *@argc: is come back
  *@argv: the other
  *
- *Description: it want eat me
+ *Description: On cherche à multiplier deux arguments;
+ *
+ *
+ *
+ *
  *
  *Return: Success
  */

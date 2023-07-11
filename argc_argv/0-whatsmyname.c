@@ -1,12 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *main - return
+ *main - Write a program that prints its name, followed by a new line.
  *@argc: number of argument
  *@argv: string of argument
  *
  *Description: Un des deux paramètres 'argc' n'aura aucun argument
  *on lui ajoute l'attribue  __attribute__((unused))
+ *on affiche la string de l'argv index 0
  *
  *Return: Success
  */
