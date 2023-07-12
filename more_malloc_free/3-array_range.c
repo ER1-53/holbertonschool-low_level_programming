@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- *_strdup - Write a function that returns a pointer to a newly allocated
- *space in memory, which contains a copy of the string given as a parameter.
- *@str: is come back
+ *array_range - Write a function that creates an array of integers.
+ *@min: is come back
+ *@max: is come back
  *
  *Description: il faut connaitre le nombre de caractère à copier
  *on vérifie si str n'est pas vide sinon return NULL
@@ -18,4 +18,24 @@
  *
  *Return: Success
  */
-int *array_range(int min, int max);
+int *array_range(int min, int max)
+{
+	int *arr;
+	int i;
+	int size = max - min + 1;
+
+	if (min > max)
+		return (NULL);
+
+	arr = malloc(sizeof(int) * size);
+
+	if (arr == NULL)
+		return (NULL);
+
+	for (i = 0; i < size ; i++)
+	{
+		arr[i] = min++;
+	}
+
+	return (arr);
+}
