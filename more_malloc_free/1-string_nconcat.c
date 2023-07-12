@@ -18,41 +18,39 @@
  *
  *Return: Success
  */
- char *string_nconcat(char *s1, char *s2, unsigned int n)
- {
-	int i, j;
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	unsigned int i, j;
 	char *arr;
 
 	if (s1 == NULL)
 		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
 
-	for (i = 0 ; s1[i] != '\0'; i++)
-		i++;
-	for (j = 0 ; s2[j] != '\0' ; j++)
-		j++;
+	for (i = 0; s1[i] != '\0'; i++)
+		;
 
-	arr = malloc((i + j + 1) * sizeof(n));
+	for (j = 0; s2[j] != '\0'; j++)
+		;
 
-	if (arr == 0)
-		return (NULL);
-	i = 0;
-	j = 0;
+	arr = malloc((i + n + 1) * sizeof(char));
 
-	while (s1[i] != '\0')
-	{
-		arr[i] = s1[i];
-		i++;
-	}
+	if (arr == NULL)
+		return NULL;
 
-	while (s2[j] != '\0')
-	{
-		arr[i] = s2[j];
-		i++;
-		j++;
-	}
+	for (unsigned int k = 0; k < i; k++)
+		arr[k] = s1[k];
 
-	arr[i] = '\0';
-	return (arr);
- }
+	for (unsigned int k = 0; k < n && s2[k] != '\0'; k++)
+		arr[i + k] = s2[k];
+
+	arr[i + n] = '\0';
+
+	return arr;
+}
+
+
+
+
+
+
+
