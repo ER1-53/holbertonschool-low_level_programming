@@ -16,7 +16,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i, j;
-	int sum = i + j + 1;
+	int sum;
 	char *arr;
 
 	if (s1 == NULL)
@@ -28,6 +28,8 @@ char *str_concat(char *s1, char *s2)
 		;
 	for (j = 0 ; s2[j] != '\0' ; j++)
 		;
+
+	sum = (i + j) + 1;
 
 	arr = malloc(sum * sizeof(char));
 
