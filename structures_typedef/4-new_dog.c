@@ -6,10 +6,12 @@
 
 
 /**
- *new_dog - fucntion struct dog
+ * new_dog - fucntion struct dog
  * @name: pointer to my_dog
  * @age: pointer to my_dog
  * @owner: pointer to my_dog
+ *
+ * Return: success return dog value
  *
  * Description: struct of the listing of the dog
  */
