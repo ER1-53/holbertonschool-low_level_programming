@@ -13,7 +13,16 @@
  *
  * Return: success return dog value
  *
- * Description: struct of the listing of the dog
+ * Description: alias dog_t present dans le dog.h sous la forme d'un typedef
+ * appel une fonction de pointeur '*new_dog' qui prend comme parametre
+ * 'char name', 'float age' et 'char owner';
+ * On crée un pointeur de struct.
+ * On crée deux variables qui nous servent à compter les caractères de name et
+ * owner avec la function strlen.
+ * On alloue la mémoire nécessaire avec la type utilisé pas dog_t
+ * et return NULL si celui-ci fail ou vide
+ * On vise dog
+ *
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
