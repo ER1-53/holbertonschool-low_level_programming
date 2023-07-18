@@ -5,8 +5,10 @@
 
 
 /**
- *_function - return
- *@name: is come back
+ *array_iterator - return
+ *@array: information of the array
+ *@size: size of the array
+ *@action: pointer to the function action
  *
  *
  *Description: it want eat me
@@ -15,7 +17,7 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned i;
+	unsigned long i;
 
 	if (array == NULL || action == NULL)
 		return;

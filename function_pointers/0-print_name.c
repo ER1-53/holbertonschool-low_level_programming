@@ -6,7 +6,7 @@
 /**
  *print_name - return
  *@name: is come back
- *
+ *@f: it is the pointer to the function of the main
  *
  *Description: le parametre void (*f)(char *) fait réfèrence à la function
  * appeler en argument dans le main.
