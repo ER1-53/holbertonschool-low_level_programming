@@ -34,7 +34,6 @@ int op_sub(int a, int b)
 }
 
 /**
- *
  *op_mul - returns the product of a by b
  *@a: information of the array
  *@b: the number of elements in the array
@@ -50,7 +49,7 @@ int op_mul(int a, int b)
 }
 
 /**
- *op_dov - returns the result of the division of a by b
+ *op_div - returns the result of the division of a by b
  *@a: information of the array
  *@b: the number of elements in the array
  *
