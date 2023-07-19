@@ -5,7 +5,7 @@
 
 
 /**
- *sum_them_all - return
+ *print_numbers - return
  *@n: information of the array
  *
  *
@@ -13,26 +13,21 @@
  *
  *Return: Success
  */
-
-int sum_them_all(const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list param;
+	va_list print;
 	unsigned int i;
-	int sum;
+	char *arg_inc;
 
-	if (n == 0)
-	return (0);
-
-	va_start(param, n);
-
-	sum = 0;
+	va_start(print, n);
 
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg(param, int);
+		if()
+		printf("%s%s", va_arg(print, char), separator);
 	}
 
-	va_end(param);
-
-	return (sum);
+	va_end(print);
+	
+	putchar('\n');
 }
