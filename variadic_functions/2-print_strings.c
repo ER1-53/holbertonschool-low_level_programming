@@ -5,8 +5,9 @@
 
 
 /**
- *print_numbers - return
- *@n: information of the array
+ *print_strings - return
+ *@separator: separate before the end
+ *@n: number of int
  *
  *
  *Description: it want eat me
@@ -23,11 +24,17 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		if()
-		printf("%s%s", va_arg(print, char), separator);
+		arg_inc = va_arg(print, char*);
+		if (arg_inc == NULL)
+			printf("(nil)");
+
+		printf("%s", arg_inc);
+
+		if (separator != NULL && i < n - 1)
+			printf("%s", separator);
 	}
 
 	va_end(print);
-	
+
 	putchar('\n');
 }
