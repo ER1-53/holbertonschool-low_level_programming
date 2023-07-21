@@ -13,12 +13,13 @@ void print_funct_string(va_list arg)
 {
 	char *str = va_arg(arg, char *);
 
-	if (*str != '\0')
+	if (str == NULL)
 	{
-	printf("%s", str);
+	printf("(nil)");
 	return;
 	}
-	printf("(nil)");
+
+	printf("%s", str);
 }
 
 /**
