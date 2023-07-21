@@ -55,6 +55,8 @@ void print_funct_int(va_list arg)
 	printf("%d", num);
 }
 
+
+
 /**
  *print_all - return
  *@format: information of the array
@@ -67,9 +69,10 @@ void print_funct_int(va_list arg)
 
 void print_all(const char * const format, ...)
 {
+
 	va_list prints_type;
-	unsigned int i;
-	unsigned int j = 0;
+	int i;
+	int j = 0;
 	char *separator = "";
 
 
@@ -77,19 +80,19 @@ void print_all(const char * const format, ...)
 		{"s", print_funct_string},
 		{"c", print_funct_char},
 		{"i", print_funct_int},
-		{"f", print_funct_float},
-		{'\0', NULL}
+		{"f", print_funct_float}
 	};
+
 
 	va_start(prints_type, format);
 
-	while (format[j] != '\0')
+	while (format != NULL && format[j] != '\0' )
 	{
 		i = 0;
 
-		while (i < 4)
+		while (i < 4 )
 		{
-			if (format[j] == *variable_type[i].variable_type)
+			if (format[j] == *(variable_type[i].variable_type))
 			{
 				printf("%s", separator);
 				variable_type[i].f(prints_type);
@@ -97,12 +100,10 @@ void print_all(const char * const format, ...)
 			}
 			i++;
 		}
-
-
 		j++;
-
 	}
 
 	va_end(prints_type);
 	printf("\n");
+
 }
