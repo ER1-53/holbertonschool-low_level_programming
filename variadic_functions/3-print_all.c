@@ -86,11 +86,11 @@ void print_all(const char * const format, ...)
 
 	va_start(prints_type, format);
 
-	while (format != NULL && format[j] != '\0' )
+	while (format != NULL && format[j] != '\0')
 	{
 		i = 0;
 
-		while (i < 4 )
+		while (i < 4)
 		{
 			if (format[j] == *(variable_type[i].variable_type))
 			{
