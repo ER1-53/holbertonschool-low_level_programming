@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node - singly linked list
+ * *add_node - singly linked list
  *
  * @head: length of the string
  * @str: length of the string
