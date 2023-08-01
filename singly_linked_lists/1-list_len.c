@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * print_len - singly linked list
+ * list_len - singly linked list
  *
  * @h: length of the string
  *
