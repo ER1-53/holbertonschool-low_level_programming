@@ -17,6 +17,9 @@ unsigned int binary_to_uint(const char *b)
 	int base = 1;
 	int i = 0;
 
+	if (b == NULL)
+		return (NULL);
+		
 	while (b[i + 1] != '\0')
 		i++;
 
