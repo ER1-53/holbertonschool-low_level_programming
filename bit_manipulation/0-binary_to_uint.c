@@ -27,6 +27,8 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] == '1')
 			decimal += base;
+		else if (b[i] != '0')
+			return (0);
 
 		base *= 2;
 		i--;
