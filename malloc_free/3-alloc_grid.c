@@ -19,19 +19,22 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **tab;
+	int **tab; /* déclaration d'un pointeur vers un pointeur (tableau2D)*/
 	int i, j;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	tab = malloc(sizeof(int *) * height);
+	tab = (int **)malloc(sizeof(int *) * height);
+	/*alloue la mémoire pour les lignes*/
 	if (tab == NULL)
 		return (NULL);
 
-	for (i = 0; i < height; i++)
+	for (i = 0; i < height; i++) /*la vloucle va permettre d'allouer la mémoire
+	pour chaque colonnes de chaque ligne*/
 	{
-		tab[i] = malloc(sizeof(int) * width);
+		tab[i] = (int *)malloc(sizeof(int) * width);
+		/*alloue la mémoire pour les colonnes*/
 		if (tab[i] == NULL)
 		{
 			for (j = 0; j < i; j++)
