@@ -1,27 +1,33 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "lists.h"
+#include "main.h"
 
 /**
- * print_dlistint - print a list
+ * binary_to_uint - print a list
  *
- * @h: pointer to the list
+ * @b: pointer to the list
  *
  * Return: temp.
  */
 
-unsigned int binary_to_unint(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
+	int decimal = 0;
+	int base = 1;
 	int i = 0;
 
-	if (b == NULL)
-		return NULL;
+	while (b[i + 1] != '\0')
+		i++;
 
-	while (b[i] != '\0')
+	while (i >= 0)
 	{
-		putchar(b[i]);
+		if (b[i] == '1')
+			decimal += base;
 
+		base *= 2;
+		i--;
 	}
-	return i;
+
+	return (decimal);
 }
