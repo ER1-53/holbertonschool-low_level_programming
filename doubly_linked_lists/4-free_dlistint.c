@@ -4,9 +4,9 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - prints then returns the length of element
+ * free_dlistint - prints then returns the length of element
  *
- * @n: pointer to the list
+ * 
  * @head: pointer to the list
  *
  * Return: temp.
@@ -19,14 +19,6 @@ void free_dlistint(dlistint_t *head)
 
 	if (head == NULL)
 		return;
-
-	/*while (head != NULL)
-	{
-		temp = head;
-		head = head->next;
-		free(temp);
-	}
-	return;*/
 
 	if (head->prev != NULL)
 	{

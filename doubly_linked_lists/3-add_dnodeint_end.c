@@ -39,7 +39,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	else
 	{
-		temp = *head; 
+		temp = *head;
 		while (temp->next != NULL)
 			temp = temp->next;
 		/* a se stade head est le 1er node et temp le dernier*/
