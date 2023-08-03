@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * get_dnodeint_at_index - prints then returns the length of element
+ * sum_dlistint - prints then returns the length of element
  *
  * @head: pointer to the list
  *
