@@ -6,7 +6,6 @@
 /**
  * free_dlistint - prints then returns the length of element
  *
- * 
  * @head: pointer to the list
  *
  * Return: temp.
