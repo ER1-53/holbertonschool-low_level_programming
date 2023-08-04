@@ -34,6 +34,5 @@ void print_binary(unsigned long int n)
 	if (leading_zeros) {
 		putchar('0');
 	}
-
-	putchar('\n');
+	return;
 }

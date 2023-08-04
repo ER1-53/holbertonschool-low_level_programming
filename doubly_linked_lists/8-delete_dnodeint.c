@@ -28,13 +28,17 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		i++;
 	}
 
-	if (pop_node == NULL)
+	if (pop_node == NULL) /*si l'index que l'on veut n'existe pas*/
 		return (-1);
 
+	/* idée general
+			si prev ou next sont NULL pas besoin de leurs envoyer
+			d'adresse
+			MAIS si on supprime le 1er node alors le 2nd devient HEAD*/
 	if (pop_node->prev != NULL)
 		pop_node->prev->next = pop_node->next;
 	else
-		*head = pop_node->next;
+		*head = pop_node->next;/*le 2nd devient HEAD*/
 
 	if (pop_node->next != NULL)
 		pop_node->next->prev = pop_node->prev;

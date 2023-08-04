@@ -44,13 +44,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{ cp_head = cp_head->next;
 	i++; }
 
-	if (cp_head == NULL)
-	{ free(new_node);
+	if (cp_head == NULL) /*si on arrive à la fin de list sans trouver l'index*/
+	{ free(new_node);/*on libere la mémoire du nouveau noeud*/
 		return (NULL); }
 
 	new_node->next = cp_head->next;
-	if (cp_head->next != NULL)
-		cp_head->next->prev = new_node;
+	if (cp_head->next != NULL) /*si le node suivant est nul*/
+		cp_head->next->prev = new_node;/*pas besoin de lui transmettre l'adresse
+		 du nouveau noeud*/
 
 	cp_head->next = new_node;
 	new_node->prev = cp_head;
