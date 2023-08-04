@@ -8,7 +8,7 @@
  *
  * @n: pointer to the list
  *
- * Return: temp.
+ *
  */
 
 #include <stdio.h>
@@ -17,22 +17,28 @@ void print_binary(unsigned long int n)
 {
 	int i = 63;
 	int leading_zeros = 1;
+	unsigned long int mask = 1UL << i;
 
-	while (i >= 0) {
-		unsigned long int mask = 1UL << i;
-		if (n & mask) {
+	while (i >= 0)
+	{
+
+		if (n & mask)
+		{
 			putchar('1');
 			leading_zeros = 0;
-		} else {
-			if (!leading_zeros) {
+		}
+		else
+		{
+			if (!leading_zeros)
+			{
 				putchar('0');
 			}
 		}
 		i--;
 	}
 
-	if (leading_zeros) {
+	if (leading_zeros)
+	{
 		putchar('0');
 	}
-	return;
 }
