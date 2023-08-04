@@ -12,7 +12,7 @@
  * description : while (xor > 0)
  *
  *if (xor & 1)
- count++;
+ *count++;
  *xor >>= 1
  *}
  *return count;
