@@ -12,7 +12,7 @@
  * description : while (xor > 0)
  *
  *if (xor & 1)
- *count++;
+ count++;
  *xor >>= 1
  *}
  *return count;
@@ -27,7 +27,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	while (xor_result)
 	{
 		count++;
-		xor_result = xor_result & xor_result - 1;
+		xor_result = xor_result & (xor_result - 1);
 	}
 
 	return (count);
