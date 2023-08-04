@@ -15,23 +15,25 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int binary[32];
-	int i = 0;
-	int j;
+	int i = 63;
+	int leading_zeros = 1;
 
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
+	while (i >= 0) {
+		unsigned long int mask = 1UL << i;
+		if (n & mask) {
+			putchar('1');
+			leading_zeros = 0;
+		} else {
+			if (!leading_zeros) {
+				putchar('0');
+			}
+		}
+		i--;
 	}
 
-	while (n > 0)
-	{
-		binary[i] = n & 1;
-		n = n >> 1;
-		i++;
+	if (leading_zeros) {
+		putchar('0');
 	}
 
-	for (j = i - 1; j >= 0; j--)
-		_putchar(binary[j] + '0');
+	putchar('\n');
 }
