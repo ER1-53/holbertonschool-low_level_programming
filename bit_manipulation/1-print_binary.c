@@ -17,10 +17,11 @@ void print_binary(unsigned long int n)
 {
 	int i = 63;
 	int leading_zeros = 1;
-	unsigned long int mask = 1UL << i;
+	unsigned long int mask;
 
 	while (i >= 0)
 	{
+		mask = 1UL << i;
 
 		if (n & mask)
 		{
