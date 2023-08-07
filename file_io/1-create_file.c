@@ -8,10 +8,10 @@
 #include <sys/stat.h>
 
 /**
- * read_textfile - print a list
+ * create_file - print a list
  *
  * @filename: pointer to the list
- * @letters: pointer to the list
+ * @text_content: pointer to the list
  *
  * Return: rd.
  */
@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 	if (!filename)
 		return (-1);
 
-	op = open(filename,O_WRONLY | O_CREAT );
+	op = open(filename, O_RDWR | O_CREAT | O_TRUNC);
 	if (op == -1)
 		return (-1);
 
