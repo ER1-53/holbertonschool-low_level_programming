@@ -6,10 +6,18 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+/**
+ * read_textfile - print a list
+ *
+ * @filename: pointer to the list
+ * @letters: pointer to the list
+ *
+ * Return: rd.
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int op, rd;
+	int op, rd, wr;
 	char *buf;
 
 	if (!filename)
@@ -25,12 +33,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(op);
 		return (0);
 	}
-	
-	rd = read(op , buf , letters);
+
+	rd = read(op, buf, letters);
 	if (rd == -1)
 		return (0);
 
-	write(1 , buf , rd);
+	wr = write(1, buf, rd);
+
 
 	close(op);
 	free(buf);
