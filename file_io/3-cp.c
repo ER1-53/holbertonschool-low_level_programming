@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 	close(op_file2);
 	if (close(op_file2) == -1 || close(op_file1) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd");
+		dprintf(STDERR_FILENO, "Error: Can't close fd\n");
 		return (100);
 	}
 	return (0);
