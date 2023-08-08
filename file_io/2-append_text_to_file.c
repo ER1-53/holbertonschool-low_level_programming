@@ -22,20 +22,14 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (!filename)
 		return (-1);
 
+	text_len = strlen(text_content);
+
 	op = open(filename, O_WRONLY | O_APPEND);
-	if (op == -1)
+	bytes = write(op, text_content, text_len);
+	
+	if (op == -1 || bytes == -1)
 		return (-1);
 
-	if (!text_content)
-	{
-		close(op);
-			return (-1);
-	}
-
-		text_len = strlen(text_content);
-		bytes = write(op, text_content, text_len);
-
-		close(op);
-
-		return (bytes == (int )text_len) ? 1 : -1;
+	close(op);
+	return (1);
 }
