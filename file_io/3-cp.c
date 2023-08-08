@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 
 	if (op_file1 == -1 || rd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %S\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		close(op_file1);
 		exit(98);
 	}
