@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 
 	if (op_file1 == -1 || rd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %S\n", argv[1]);
 		close(op_file1);
 		exit(98);
 	}
@@ -44,10 +44,13 @@ int main(int argc, char **argv)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
 		close(op_file2);
-		exit(100);
+		exit(99);
 	}
 
 	close(op_file2);
-
+	if (close(op_file2) == -1 || close(op_file1) == -1)
+	{
+		return (100);
+	}
 	return (0);
 }
