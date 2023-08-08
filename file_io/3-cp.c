@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 
 	if (op_file1 == -1 || rd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
 		close(op_file1);
 		exit(98);
 	}
@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 	w = write(op_file2, buffer, rd);
 	if (w == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		close(op_file2);
 		exit(99);
 	}
