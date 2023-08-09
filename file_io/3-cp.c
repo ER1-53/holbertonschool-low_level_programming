@@ -48,9 +48,14 @@ int main(int argc, char **argv)
 	}
 
 	close(op_file2);
-	if (close(op_file2) == -1 || close(op_file1) == -1)
+	if (close(op_file1) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd\n");
+		dprintf(STDERR_FILENO, "Error: Can't close fd op_file1\n");
+		return (100);
+	}
+	if (close(op_file2) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd op_file2\n");
 		return (100);
 	}
 	return (0);
