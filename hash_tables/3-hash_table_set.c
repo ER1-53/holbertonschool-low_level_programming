@@ -4,10 +4,11 @@
 #include "hash_tables.h"
 
 /**
- * key_index - check the code for
+ * hash_table_set - check the code for
  *
+ * @ht: taille du
  * @key: taille du
- * @size: taille du
+ * @value: taille du
  *
  * Return: Always EXIT_SUCCESS.
  */
