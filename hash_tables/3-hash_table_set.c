@@ -21,7 +21,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node = (hash_node_t *)malloc(sizeof(hash_node_t));
 
 	if (new_node == NULL)
-		return (1);
+		return (0);
 
 	hash_key = key_index((unsigned char *)key, ht->size);
 	new_node->key = strdup(key);
