@@ -22,14 +22,14 @@ int main(int argc, char **argv)
 	char buffer[1024];
 
 	if (argc != 3)
-		{
-			dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-			exit(97);
-		}
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
 
 	op_file1 = open(argv[1], O_RDONLY);
 	rd = read(op_file1, buffer, 1024);
-	op_file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 664);
+	op_file2 = open(argv[2], O_CREAT | O_WRONLY, 0664);
 
 	if (op_file1 == -1 || rd == -1)
 	{
