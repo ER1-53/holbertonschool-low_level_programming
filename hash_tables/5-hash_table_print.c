@@ -4,10 +4,9 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - check the code for
+ * hash_table_print - check the code for
  *
  * @ht: taille du
- * @key: taille du
  *
  *
  * Return: Always EXIT_SUCCESS.
