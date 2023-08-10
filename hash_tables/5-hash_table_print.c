@@ -15,6 +15,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
+	int virgule = 0;
 	hash_node_t *element;
 
 	if (ht == NULL)
@@ -25,14 +26,15 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
+
 		element = ht->array[i];
+
 		while (element != NULL)
 		{
-			printf("'%s': '%s'", element->key, element->value);
-			if (element->next != NULL)
-			{
+			if (virgule != 0)
 				printf(", ");
-			}
+			virgule = 1;
+			printf("'%s': '%s'", element->key, element->value);
 			element = element->next;
 		}
 	}
