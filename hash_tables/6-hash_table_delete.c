@@ -15,14 +15,21 @@
 
 void hash_table_delete(hash_table_t *ht)
 {
-	int i;
+	unsigned long int i;
 	hash_node_t *item;
 
-	for (i = 0; i < ht->size; i++)
-	{
+	 for (i = 0; i < ht->size; i++)
+	 {
 		item = ht->array[i];
 
-		if (item != NULL)
-			free(item)
+		while (item != NULL)
+		{
+			hash_node_t *temp = item;
+			item = item->next;
+			free(temp);
+		}
 	}
+
+	free(ht->array);
+	free(ht);
 }
