@@ -15,21 +15,29 @@
 
 void hash_table_delete(hash_table_t *ht)
 {
-	unsigned long int i;
-	hash_node_t *item;
+	unsigned int index;
+	hash_node_t *node, *temp;
 
-	 for (i = 0; i < ht->size; i++)
-	 {
-		item = ht->array[i];
+	if (ht == NULL)
+		return;
 
-		while (item != NULL)
+	for (index = 0; index < ht->size; index++)
+	{
+		node = ht->array[index];
+		while (node != NULL)
 		{
-			hash_node_t *temp = item;
-			item = item->next;
+			temp = node;
+			node = node->next;
+
+			free(temp->key);
+			free(temp->value);
 			free(temp);
 		}
 	}
 
 	free(ht->array);
+
+	/* Free the hash table struct */
 	free(ht);
 }
+
