@@ -4,7 +4,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - check the code for
+ * hash_table_delete - check the code for
  *
  * @ht: taille du
  *
