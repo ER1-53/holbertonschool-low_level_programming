@@ -3,11 +3,11 @@
 ## Resources
 #### Read or watch:
 
-[Recursion, introduction](https://intranet.hbtn.io/rltoken/RZZmKmQJAnyqS_Ci1fFy2A)
-[What on Earth is Recursion?](https://intranet.hbtn.io/rltoken/2W6GbB5XNktHDrjqoRPy2g)
-[C - Recursion](https://intranet.hbtn.io/rltoken/DC8k2o4fIaE379ozY_Gl1A)
-[C Programming Tutorial 85, Recursion pt.1](https://intranet.hbtn.io/rltoken/z4N9mWZKHoonkjFmeA2moA)
-[C Programming Tutorial 86, Recursion pt.2](https://intranet.hbtn.io/rltoken/IOJxRGq3Ts8lNhR2IWwCnA)
+- [Recursion, introduction](https://intranet.hbtn.io/rltoken/RZZmKmQJAnyqS_Ci1fFy2A)
+- [What on Earth is Recursion?](https://intranet.hbtn.io/rltoken/2W6GbB5XNktHDrjqoRPy2g)
+- [C - Recursion](https://intranet.hbtn.io/rltoken/DC8k2o4fIaE379ozY_Gl1A)
+- [C Programming Tutorial 85, Recursion pt.1](https://intranet.hbtn.io/rltoken/z4N9mWZKHoonkjFmeA2moA)
+- [C Programming Tutorial 86, Recursion pt.2](https://intranet.hbtn.io/rltoken/IOJxRGq3Ts8lNhR2IWwCnA)
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
