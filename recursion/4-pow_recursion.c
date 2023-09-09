@@ -27,3 +27,12 @@ int _pow_recursion(int x, int y)
 	}
 	return (x * _pow_recursion(x, y - 1));
 }
+
+/*int _sqrt_recursion(int n)
+{
+	if (n < 0)
+	{
+		return (-1);
+	}
+	return res_sqrt_recursion(0, n);
+}*/
