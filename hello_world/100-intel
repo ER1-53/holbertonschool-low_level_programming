@@ -1,2 +1,2 @@
 #!/bin/bash
-for file in $CFILE ; do mv "$file" "${file%.*}.s" ; done
+for file in $CFILE ; do mv "$file" "${file%.c}.s" ; done
