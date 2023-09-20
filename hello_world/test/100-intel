@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc $CFILE ; for file in $1/*.c ; do mv "$file" "${file%.*}.s" ; done
