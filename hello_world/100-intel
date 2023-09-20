@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE ; for file in ./*.c ; do mv "$file" "${file%.*}.s" ; done
+for file in ./*.c ; do mv "$file" "${file%.*}.s" ; done
