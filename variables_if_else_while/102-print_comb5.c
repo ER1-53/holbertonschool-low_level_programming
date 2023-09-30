@@ -11,26 +11,31 @@
 
 int main(void)
 {
-    char thous, hund, dozen, unit;
+    int thous = 0, hund = 0, dozen = 0, unit = 0;
 
-    for (thous = '0'; thous <= '9'; thous++)
+    for (thous = 0; thous <= 9; thous++)
     {
-        for (hund = '0'; hund <= '9'; hund++)
+        for (hund = 0; hund <= 9; hund++)
         {
-            for (dozen = '0'; dozen <= '9'; dozen++)
+            for (dozen = 0; dozen <= 9; dozen++)
             {
-                for (unit = '0'; unit <= '9'; unit++)
+                for (unit = 0; unit <= 9; unit++)
                 {
                     if (hund >= unit)
                         continue;
-                    putchar(thous);
-                    putchar(hund);
+                    putchar(thous + '0');
+                    putchar(hund + '0');
                     putchar(' ');
-                    putchar(dozen);
-                    putchar(unit);
-                    putchar(',');
-                    putchar(' ');
-                 
+                    putchar(dozen + '0');
+                    putchar(unit + '0');
+
+                    if (thous != 9 || hund != 8 || dozen != 9 || unit != 9)
+                    {
+                        putchar(',');
+                        putchar(' ');
+                    }
+                    else
+                        putchar('\n');         
                 }
             }
         }
