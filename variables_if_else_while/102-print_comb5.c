@@ -21,7 +21,9 @@ int main(void)
             {
                 for (unit = 0; unit <= 9; unit++)
                 {
-                    if (hund >= unit)
+                    if (hund > unit || hund > thous || hund > dozen ||
+                    thous > dozen || thous > unit ||
+                    dozen > unit)
                         continue;
                     putchar(thous + '0');
                     putchar(hund + '0');
@@ -29,16 +31,26 @@ int main(void)
                     putchar(dozen + '0');
                     putchar(unit + '0');
 
-                    if (thous != 9 || hund != 8 || dozen != 9 || unit != 9)
+                    if (thous == 9 && hund == 8 && dozen == 9 && unit == 9)
+                    {
+                        putchar('\n'); 
+                        break;
+                        
+                    }
+                    else
                     {
                         putchar(',');
                         putchar(' ');
-                    }
-                    else
-                        putchar('\n');         
+                    }                
                 }
+                if (thous == 9 && hund == 8 && dozen == 9 && unit == 9)
+                    break;
             }
+            if (thous == 9 && hund == 8 && dozen == 9 && unit == 9)
+                break;
         }
+        if (thous == 9 && hund == 8 && dozen == 9 && unit == 9)
+                break;
     }
     return (0);
 }
